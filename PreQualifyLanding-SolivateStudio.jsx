@@ -139,7 +139,7 @@ export default function PreQualifyLanding() {
       {/* Header */}
       <header className="w-full max-w-2xl flex items-center justify-between px-6 pt-6">
         <div className="flex items-center gap-2">
-          <img className="w-7 h-7 rounded-md flex items-center justify-center font-extrabold text-sm" src="./public/logo_only.jpg" alt="" />
+          <img className="w-7 h-7 rounded-md flex items-center justify-center object-cover" src="/logo_only.jpg" alt="Solivate Studio Logo" />
           <span className="font-extrabold text-base tracking-tight" style={{ color: "var(--text-white)" }}>
             SOLIVATE <span className="font-thin">STUDIO</span>
           </span>
