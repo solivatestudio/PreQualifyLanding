@@ -11,7 +11,7 @@ import { ArrowRight, ArrowLeft, Loader2, Check, Globe, Users, CalendarHeart, Cpu
 // swap the @import + fontFamily below in one place if the real brand font differs.
 // ---------------------------------------------------------------------------
 
-const WA_NUMBER = "6281219118993";
+const WA_NUMBER = "628138178601";
 
 const CATEGORIES = [
   {
@@ -72,7 +72,7 @@ export default function PreQualifyLanding() {
 
   const waLink = () => {
     const lines = [
-      `Halo Solivate Studio! 👋`,
+      `Halo Solivate Studio!`,
       `Saya ${name.trim()}, tertarik bikin *${catData?.label}*.`,
       `Budget: ${budgetData?.label}`,
       `Boleh dibantu lanjut ke tahap berikutnya?`,
@@ -139,18 +139,13 @@ export default function PreQualifyLanding() {
       {/* Header */}
       <header className="w-full max-w-2xl flex items-center justify-between px-6 pt-6">
         <div className="flex items-center gap-2">
-          <div
-            className="w-7 h-7 rounded-md flex items-center justify-center font-extrabold text-sm"
-            style={{ background: "var(--accent-lime)", color: "var(--text-navy)" }}
-          >
-            S
-          </div>
+          <img className="w-7 h-7 rounded-md flex items-center justify-center font-extrabold text-sm" src="../dist/assets/logo_only.jpg" alt="" />
           <span className="font-extrabold text-base tracking-tight" style={{ color: "var(--text-white)" }}>
-            SOLIVATE
+            SOLIVATE <span className="font-thin">STUDIO</span>
           </span>
         </div>
         <span className="text-xs font-medium" style={{ color: "var(--text-muted-dark)" }}>
-          Bekasi, Indonesia
+          Indonesia
         </span>
       </header>
 
@@ -258,7 +253,7 @@ function OptionCard({ active, onClick, children }) {
   return (
     <button
       onClick={onClick}
-      className="pq-focus w-full text-left rounded-xl p-4 flex items-start gap-3 transition-colors duration-150"
+      className="cursor-pointer pq-focus w-full text-left rounded-xl p-4 flex items-start gap-3 transition-colors duration-150"
       style={{
         background: active ? "rgba(222,243,59,0.08)" : "transparent",
         border: `1px solid ${active ? "var(--accent-lime)" : "var(--border-dark)"}`,
