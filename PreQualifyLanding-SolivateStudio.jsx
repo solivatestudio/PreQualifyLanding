@@ -87,6 +87,14 @@ export default function PreQualifyLanding() {
     }
     setNameError(false);
     setSending(true);
+    
+    if (typeof window !== "undefined" && typeof window.fbq === "function") {
+      window.fbq("track", "Lead", {
+        content_category: catData?.label,
+        value: budgetData?.label,
+      });
+    }
+
     // Small deliberate delay: gives the redirect weight instead of an instant
     // jarring tab-swap, and prevents accidental double-taps on mobile.
     setTimeout(() => {
