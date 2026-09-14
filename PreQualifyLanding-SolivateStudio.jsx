@@ -158,7 +158,7 @@ export default function PreQualifyLanding() {
       </header>
 
       {/* Hero */}
-      <div className="w-full max-w-2xl px-6 pt-10 pb-8">
+      <div className="w-full max-w-2xl px-6 pt-5 sm:pt-10 pb-8">
         <p
           className="text-xs font-bold tracking-widest uppercase mb-3"
           style={{ color: "var(--accent-cyan)" }}
@@ -180,9 +180,9 @@ export default function PreQualifyLanding() {
       </div>
 
       {/* Card */}
-      <div className="w-full max-w-2xl px-6 pb-16 -mt-2">
+      <div className="w-full max-w-2xl px-6 pt-4 sm:pt-0 pb-16 mt-0 sm:-mt-2">
         <div
-          className="rounded-2xl p-6 sm:p-8"
+          className="rounded-2xl p-6 pt-5 sm:p-8"
           style={{ background: "var(--card-dark)", border: "1px solid var(--border-dark)" }}
         >
           {/* browser-chrome nod, echoes the hero mockup on solivate.com */}
